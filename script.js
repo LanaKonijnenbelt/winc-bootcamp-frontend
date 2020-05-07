@@ -1,155 +1,97 @@
-//Deel 1: Objecten
+//Deel A
 
-//punten 1 en 2
+//bullet point 1
 
-let person = {
-    name: 'Lana',
-    age: 28
-};
+/*
+makeCheeseSandwich
+• Step 1: Get 2 slices of bread.
+• Step 2: Put 3 slices of Violife vegan cheese on top of 1 slice of bread.
+• Step 3: Put the other slice of bread on top of the first one.
+*/
 
-//punt 3
+//bullet point 2
 
-console.log(person)
+/*
 
-//punt 4
+function makeCheeseSandwich(){
+    console.log('Step 1: Get 2 slices of bread.');
+    console.log('Step 2: Put 3 slices of Violife vegan cheese on top of 1 slice of bread.');
+    console.log('Step 3: Put the other slice of bread on top of the first one.');
+}
 
-console.log(person.name)
+makeCheeseSandwich();
 
-//punt 5
+//bullet point 3 en verder
 
-console.log(person.age)
+function makeCheeseSandwich(withFilling1, withFilling2){
+    console.log('Step 1: Get 2 slices of bread.');
+    console.log('Step 2: Put 3 slices of Violife vegan cheese, ' + withFilling1 + 'and ' + withFilling2 + 'on top of 1 slice of bread.');
+    console.log('Step 3: Put the other slice of bread on top of the first one.');
+}
 
-//punt 6 ik verander hier de waarden even om te kijken of het goed doorkomt, denk dat dat ook de bedoeling was van de deelopdracht, maar het staat er niet duidelijk.
+makeCheeseSandwich('6 slices of cucumber, ', '50 grams of lettuce ');
 
-person.name = 'Lissa';
+//Deel B: schrijf een functie met een argument
 
-person.age = 23;
+//punt 1-5
 
-console.log(person.name)
-console.log(person.age)
+function makeSandwich(filling){
+    console.log('There you go, a sandwich with ' + filling);
+}
 
-person['name'] = 'Jesse';
+makeSandwich('topping');
 
-person['age'] = 24;
 
-console.log(person.name)
-console.log(person.age)
+//punt 6 en 7
 
-//punt 7
+/*
+De functie declareer je bovenin je code en ziet er, abstract gezien, ongeveer zo uit:
 
-console.log(person)
+function naamFunctie(parameter){
+    console.log(HIER DECLAREER JE DE FUNCTIE)
+}
 
-let evaluations = (7, 10, 9);
+Daaronder call je de functie. Abstract gezien ziet dat er ongeveer zo uit:
 
-console.log(evaluations);
+naamFunctie(argument)
 
-//de waarde is 9
-
-//Deel 2: Arrays
-
-//punt 1, 2 en 3
-
-let selectedColors = ['cyan', 'magenta', 'yellow', 'black'];
-
-console.log(selectedColors);
-
-//punt 4
-
-console.log(selectedColors.length)
-
-//punt 5
-
-console.log(selectedColors[0])
-
-//punt 6
-
-console.log(selectedColors[3])
-
-//punt 7
-
-selectedColors.push('white')
-
-console.log(selectedColors)
 
 //punt 8
 
-selectedColors.push('41.5')
 
-console.log(selectedColors)
-
-//punt 9
-
-selectedColors.push({ greeting: "Hi, ik ben een object!" })
-
-console.log(selectedColors)
-
-//punt 10
-
-console.log(selectedColors[6])
-
-//Deel 3: Bekijk een "real-life" object
-
-const catBreeds = [{
-    name: "Abyssinian",
-    description: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.",
-    dog_friendly: 4,
-    energy_level: 5,
-    life_span: "14 - 15",
-    origin: "Egypt",
-    temperament: ["Active", "Energetic", "Independent", "Intelligent", "Gentle"],
-    wikipedia_url: "https://en.wikipedia.org/wiki/Abyssinian_(cat)",
-    food: {
-        favourite_food: "fish",
-        medium_liked_food: "dried fruits",
-        disliked_food: "walnuts"
-    }
-},
-{
-    name: "Aegean",
-    description: "Native to the Greek islands known as the Cyclades in the Aegean Sea, these are natural cats, meaning they developed without humans getting involved in their breeding. As a breed, Aegean Cats are rare, although they are numerous on their home islands. They are generally friendly toward people and can be excellent cats for families with children.",
-    dog_friendly: 4,
-    energy_level: 53,
-    life_span: "9- 12",
-    origin: "Greece",
-    temperament: ["Affectionate", "Social", "Intelligent", "Playful", "Active"],
-    wikipedia_url: "https://en.wikipedia.org/wiki/Aegean_cat",
-    food: {
-        favourite_food: "tuna",
-        medium_liked_food: "canned food",
-        disliked_food: "all fruits"
-    }
-},
-{
-    name: "American Bobtail",
-    description: "American Bobtails are loving and incredibly intelligent cats possessing a distinctive wild appearance. They are extremely interactive cats that bond with their human family with great devotion.",
-    dog_friendly: 5,
-    energy_level: 3,
-    life_span: "11 - 15",
-    origin: "United States",
-    temperament: ["Intelligent", "Interactive", "Lively", "Playful", "Sensitive"],
-    wikipedia_url: "https://en.wikipedia.org/wiki/American_Bobtail",
-    food: {
-        favourite_food: "meaty things",
-        medium_liked_food: "tuna",
-        disliked_food: "canned food"
-    }
+function makeSandwich(filling1, filling2){
+    console.log('There you go, a sandwich with ' + filling1 + ' and ' + filling2 + '!');
 }
-]
 
-console.log("Naam van het laatste kattenras:", catBreeds[2].name)
+makeSandwich('bell pepper-garlic spread', 'olives');
 
-//punt 2
+*/
 
-console.log("Energieniveau van het eerste kattenras:", catBreeds[0].energy_level)
+//Deel C: gebruik een return statement
 
-//punt 3
+//na uren worstelen, dingen uitproberen, alle video's nog een keer bekijken, aantekeningen doornemen... Maar het is gelukt!
 
-console.log("Eerste temperament van het tweede kattenras:", catBreeds[1].temperament[0])
+/*
+function calculateDiscountedPrice(totalAmount, discount) {
+    return totalAmount * discount;
+  }
 
-//punt 4
+let totalAmount = 3;
+let discount = 0.8;
+console.log(totalAmount * discount);
+*/
 
-console.log("Laatste temperament van het derde kattenras:", catBreeds[2].temperament[4])
 
-//punt 5
+//Deel D: gebruik meerdere return statements
 
-console.log("Favoriete voedsel van het derde kattenras:", catBreeds[2].food.favourite_food)
+//hier gaat iets niet goed, maar wat? Als ik node gebruik, komt er nog steeds 2.4 uit. Ik kom er niet uit en ga nu toch maar de opdracht inleveren.
+
+function calculateDiscountedPrice(totalAmount, discount) {
+    if (totalAmount >= 25) {
+    return totalAmount * discount;
+    } 
+    else return totalAmount
+  }
+let totalAmount = 3;
+let discount = 0.8;
+console.log(totalAmount * discount);
